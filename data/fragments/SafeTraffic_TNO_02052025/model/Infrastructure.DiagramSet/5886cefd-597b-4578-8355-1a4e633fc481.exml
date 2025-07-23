@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="User folders" version="4">
+  <OBJECT>
+    <ID name="User folders" mc="Infrastructure.DiagramSet" uid="5886cefd-597b-4578-8355-1a4e633fc481"/>
+    <PID name="UML-BPMN" mc="Standard.Project" uid="c21d9186-901c-444f-b828-aab815dc56f6"/>
+    <ATTRIBUTES>
+      <ATT name="Name"><![CDATA[User folders]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

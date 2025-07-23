@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="UML-BPMN" version="4">
+  <OBJECT>
+    <ID name="UML-BPMN" mc="Standard.Project" uid="c21d9186-901c-444f-b828-aab815dc56f6"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[UML-BPMN]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="example.eu.myrtus" mc="Standard.Package" uid="514e962c-6dae-48bf-8710-7f5942700c5b"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="User folders" mc="Infrastructure.DiagramSet" uid="5886cefd-597b-4578-8355-1a4e633fc481"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

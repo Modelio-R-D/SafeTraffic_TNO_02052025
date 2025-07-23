@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="example.eu.myrtus" version="4">
+  <OBJECT>
+    <ID name="example.eu.myrtus" mc="Standard.Package" uid="514e962c-6dae-48bf-8710-7f5942700c5b"/>
+    <PID name="UML-BPMN" mc="Standard.Project" uid="c21d9186-901c-444f-b828-aab815dc56f6"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[example.eu.myrtus]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="nodetypes" mc="Standard.Package" uid="7ab2c20a-43bb-4656-b5bd-c5b8d30856a7"/>
+        <COMPID name="TrafficApplication" mc="Standard.Class" uid="ce65c77d-9685-4585-bec9-2ea51220f666"/>
+        <COMPID name="MyrtusSecurityCounterMeasure" mc="Standard.Class" uid="00d75038-40c9-42b2-949a-0820668d011a"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="ToscaModel" mc="Infrastructure.Stereotype" uid="20565008-115d-4fad-800f-134ab276f611"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Service Template diagram" mc="Standard.StaticDiagram" uid="4423cb1f-1ddf-497a-b666-9fea8f2f09fd"/>
+        <COMPID name="Topology Template diagram" mc="Standard.StaticDiagram" uid="2bf27790-9fcb-4e36-9cbc-daa871868554"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="TrafficApplication" version="4">
+  <OBJECT>
+    <ID name="TrafficApplication" mc="Standard.Class" uid="ce65c77d-9685-4585-bec9-2ea51220f666"/>
+    <PID name="example.eu.myrtus" mc="Standard.Package" uid="514e962c-6dae-48bf-8710-7f5942700c5b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[TrafficApplication]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedAttribute">
+        <OBJECT>
+          <ID name="targetNamespace" mc="Standard.Attribute" uid="a4b9a557-72ac-4d2e-8050-69a6833bded1"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[example.eu.myrtus.servicetemplates]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[targetNamespace]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Metadata" mc="Infrastructure.Stereotype" uid="d0b4eda0-d876-4c48-8bc7-604458678120"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="name" mc="Standard.Attribute" uid="4de8d25c-643c-4776-b983-8e531ade3ea0"/>
+          <ATTRIBUTES>
+            <ATT name="TypeConstraint"></ATT>
+            <ATT name="Value"><![CDATA[TrafficApplication]]></ATT>
+            <ATT name="TargetIsClass">false</ATT>
+            <ATT name="Changeable">AccesNone</ATT>
+            <ATT name="IsDerived">false</ATT>
+            <ATT name="IsOrdered">false</ATT>
+            <ATT name="IsUnique">false</ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
+            <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+            <ATT name="Visibility">Public</ATT>
+            <ATT name="IsClass">false</ATT>
+            <ATT name="IsAbstract">false</ATT>
+            <ATT name="Name"><![CDATA[name]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="string" mc="Standard.DataType" uid="00000004-0000-000d-0000-000000000000"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="Metadata" mc="Infrastructure.Stereotype" uid="d0b4eda0-d876-4c48-8bc7-604458678120"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="MultisensorMerger" mc="Standard.Class" uid="954c105c-b7f7-415f-a25e-8d21e6391139"/>
+        <COMPID name="MapMatcher" mc="Standard.Class" uid="c16e5968-aa66-41c5-b01b-a2cc28d72e53"/>
+        <COMPID name="Myrtus-Compute_0" mc="Standard.Class" uid="d0c0149d-ad99-4e22-858a-b831e3321651"/>
+        <COMPID name="SensorTracker" mc="Standard.Class" uid="a8b148ad-18b8-463e-93a0-9df5e8a719a4"/>
+        <COMPID name="RedLightDetection" mc="Standard.Class" uid="a79cbc2f-4b07-4852-a702-68fdf9a7b406"/>
+        <COMPID name="CollisionPredictor" mc="Standard.Class" uid="0912b6b1-33f5-4cc9-8967-fc7664dbc38e"/>
+        <COMPID name="MyrtusCameraFeed" mc="Standard.Class" uid="2274b4f1-6d3c-4500-b601-e6fb9bf19268"/>
+        <COMPID name="IllegalTrajectoryDetection" mc="Standard.Class" uid="709dee06-5f13-4432-a4d9-889dd92a295f"/>
+        <COMPID name="DigitalSignatureVerification" mc="Standard.Class" uid="be97ea6a-f222-4945-bfb6-6737acaeddb9"/>
+        <COMPID name="EncryptionDecryption" mc="Standard.Class" uid="850094ee-4e8d-4a7c-bfd3-bfef006fb07a"/>
+        <COMPID name="KeyExchangeMechanism" mc="Standard.Class" uid="9555b10a-d6b4-4eb2-b3e1-0d01e06c2579"/>
+        <COMPID name="SideChannelSecureLibrary" mc="Standard.Class" uid="e348da1d-7d19-4e07-a45f-e15902ac8a5d"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="TTopologyTemplate" mc="Infrastructure.Stereotype" uid="a52f433c-cf19-4033-99c2-81b4af708744"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

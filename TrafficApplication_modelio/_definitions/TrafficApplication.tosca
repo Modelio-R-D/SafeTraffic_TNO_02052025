@@ -1,0 +1,108 @@
+tosca_definitions_version: tosca_simple_yaml_1_3
+
+metadata:
+  targetNamespace: "example.eu.myrtus.servicetemplates"
+  name: "TrafficApplication"
+imports:
+  - file: MyrtusSWComponent.tosca
+    namespace_uri: example.eu.myrtus
+    namespace_prefix: MYRTUS-
+  - file: Myrtus-Compute.tosca
+    namespace_uri: example.eu.myrtus
+    namespace_prefix: MYRTUS-
+  - file: MyrtusCameraFeed.tosca
+    namespace_uri: example.eu.myrtus
+    namespace_prefix: MYRTUS-
+topology_template:
+  node_templates:
+    MultisensorMerger:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/multi_sensor_merger"
+        port: "5557"
+      requirements:
+        - connects:
+           node: SensorTracker
+           relationship: con_ConnectsTo_1
+           capability: service
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_1
+           capability: host
+    MapMatcher:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/map-matcher"
+        port: "5557"
+      requirements:
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_2
+           capability: host
+    Myrtus-Compute_0:
+      type: example.eu.myrtus.nodetypes.Myrtus-Compute
+    SensorTracker:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/sensor_tracker"
+        port: "5557"
+      requirements:
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_7
+           capability: host
+        - connects:
+           node: MyrtusCameraFeed
+           relationship: con_ConnectsTo_0
+           capability: WebService
+    RedLightDetection:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/sensor_tracker"
+        port: "5557"
+      requirements:
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_5
+           capability: host
+    CollisionPredictor:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/collision_predictor"
+        port: "5557"
+      requirements:
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_4
+           capability: host
+    MyrtusCameraFeed:
+      type: example.eu.myrtus.nodetypes.MyrtusCameraFeed
+      properties:
+        sensitivity: ""
+    IllegalTrajectoryDetection:
+      type: example.eu.myrtus.nodetypes.MyrtusSWComponent
+      properties:
+        dockerImage: "ci.hesi.energy:5000/myrtus/illegal_trajectory_detection"
+        port: "5557"
+      requirements:
+        - host:
+           node: Myrtus-Compute_0
+           relationship: con_HostedOn_3
+           capability: host
+  relationship_templates:
+    con_HostedOn_1:
+      type: tosca.relationships.hostedOn
+    con_HostedOn_2:
+      type: tosca.relationships.hostedOn
+    con_HostedOn_7:
+      type: tosca.relationships.hostedOn
+    con_HostedOn_5:
+      type: tosca.relationships.hostedOn
+    con_HostedOn_4:
+      type: tosca.relationships.hostedOn
+    con_HostedOn_3:
+      type: tosca.relationships.hostedOn
+    con_ConnectsTo_1:
+      type: tosca.relationships.connectsTo
+    con_ConnectsTo_0:
+      type: tosca.relationships.connectsTo

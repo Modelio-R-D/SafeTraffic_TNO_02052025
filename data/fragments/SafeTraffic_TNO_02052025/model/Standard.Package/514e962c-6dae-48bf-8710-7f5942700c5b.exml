@@ -17,6 +17,7 @@
         <COMPID name="nodetypes" mc="Standard.Package" uid="7ab2c20a-43bb-4656-b5bd-c5b8d30856a7"/>
         <COMPID name="TrafficApplication" mc="Standard.Class" uid="ce65c77d-9685-4585-bec9-2ea51220f666"/>
         <COMPID name="MyrtusSecurityCounterMeasure" mc="Standard.Class" uid="00d75038-40c9-42b2-949a-0820668d011a"/>
+        <COMPID name="Policies" mc="Standard.Class" uid="67d26e09-b2d7-4bcc-a864-9838ae78602e"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="ToscaModel" mc="Infrastructure.Stereotype" uid="20565008-115d-4fad-800f-134ab276f611"/>

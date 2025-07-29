@@ -23,7 +23,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="288f8bbd-e39d-4df3-82c8-13de5053c06f"/>
+                <ID name="" mc="Infrastructure.Note" uid="03b67d3b-9398-4fe0-8167-b179a896cad6"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.TDocumentationTable.mixed.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -53,7 +53,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="1fc8f92c-ae5c-4f5d-93ab-3eadfecb0888"/>
+                <ID name="" mc="Infrastructure.Note" uid="acfed183-107b-436e-ad3e-0f16faabf8e5"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.TDocumentationTable.any.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -83,7 +83,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="9ef4ca9e-bab8-4e66-ae0b-f4942dd9b974"/>
+                <ID name="" mc="Infrastructure.Note" uid="24bf658c-08b8-43a5-9c44-9779333a566e"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.TDocumentationTable.lang.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -113,7 +113,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="b82cd9e6-f66b-44b7-b8b9-863eb1e5779f"/>
+                <ID name="" mc="Infrastructure.Note" uid="36de6457-4c10-464a-8c84-fc0617402f22"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.TDocumentationTable.source.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>

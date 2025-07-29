@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Policies" version="4">
+  <OBJECT>
+    <ID name="Policies" mc="Standard.Class" uid="67d26e09-b2d7-4bcc-a864-9838ae78602e"/>
+    <PID name="example.eu.myrtus" mc="Standard.Package" uid="514e962c-6dae-48bf-8710-7f5942700c5b"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Policies]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="high_cpu_utilization_on_camera" mc="Standard.Class" uid="3f8a281d-a0c9-4ded-a6b9-6fe29eb05cd5"/>
+        <COMPID name="high_cpu_utilization_on_fog" mc="Standard.Class" uid="961f87d4-fcf1-43bf-a970-acbe154fb026"/>
+        <COMPID name="edge_low_power_mode" mc="Standard.Class" uid="8369b05e-5bbb-43db-83e4-4cee974184a8"/>
+        <COMPID name="high_traffic_scaling" mc="Standard.Class" uid="d55b2355-b46f-4f5e-a44f-3dd2b45947c0"/>
+        <COMPID name="low_traffic_scaling" mc="Standard.Class" uid="c0900cd4-42c8-41c0-be08-a8b00dd360de"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="PoliciesType" mc="Infrastructure.Stereotype" uid="205759e2-44bb-4cb3-b19e-8cfbed4f9435"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

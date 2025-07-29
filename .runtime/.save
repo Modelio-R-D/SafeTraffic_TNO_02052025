@@ -1,4 +1,4 @@
-#Wed Jul 23 13:47:35 CEST 2025
+#Tue Jul 29 12:08:09 CEST 2025
 org.modelio.app.module.propertytab.GModule\ [id\='ToscaDesigner',\ version\='0.5.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_ToscaPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.module.propertytab.GModule\ [id\='ToscaDesigner',\ version\='0.1.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_ToscaPropertyPage.org.modelio.reviewer.perspective.parentId=app.reviewer.partstack.1
 org.modelio.app.module.propertytab.GModule\ [id\='ToscaDesigner',\ version\='0.5.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_ToscaPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right

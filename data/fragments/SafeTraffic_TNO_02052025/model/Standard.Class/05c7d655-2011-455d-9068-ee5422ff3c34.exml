@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="edge_low_power_mode_trigger" version="4">
+  <OBJECT>
+    <ID name="edge_low_power_mode_trigger" mc="Standard.Class" uid="05c7d655-2011-455d-9068-ee5422ff3c34"/>
+    <PID name="edge_low_power_mode" mc="Standard.Class" uid="8369b05e-5bbb-43db-83e4-4cee974184a8"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[edge_low_power_mode_trigger]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Trigger" mc="Infrastructure.Stereotype" uid="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3" mc="Infrastructure.TypedPropertyTable" uid="d16713f1-4b7f-42b4-ae87-00a5e046330a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3]]></ATT>
+            <ATT name="Content"><![CDATA[#Wed Jul 30 09:54:04 CEST 2025
+schedule=
+condition=datetime.datetime.now().time() >\= datetime.time(1, 0) and datetime.datetime.now().time() <\= datetime.time(5, 0) and average_traffic_density_15min < low_traffic_threshold_15min
+target_filter=
+action=frame_rate\: 10 else frame_rate\: 30
+description=This trigger manages an edge device's operational mode by adjusting its camera frame rate. It activates a low power mode (setting frame_rate to 10 FPS) when the time is between 1\:00 AM and 5\:00 AM, and the average 15-minute traffic density is below a specified low threshold. Otherwise, the frame rate is maintained at 30 FPS.
+event=
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="TriggerTable" mc="Infrastructure.PropertyTableDefinition" uid="79e95ecd-2038-452e-89c3-8fb65ecf1363"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="high_traffic_scaling_trigger" version="4">
+  <OBJECT>
+    <ID name="high_traffic_scaling_trigger" mc="Standard.Class" uid="7624b063-ea9f-48b6-bf0b-da8a889a8dfb"/>
+    <PID name="high_traffic_scaling" mc="Standard.Class" uid="d55b2355-b46f-4f5e-a44f-3dd2b45947c0"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[high_traffic_scaling_trigger]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Trigger" mc="Infrastructure.Stereotype" uid="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3"/>
+      </LINK>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3" mc="Infrastructure.TypedPropertyTable" uid="fce4a62b-ea97-4251-b1e9-ba2f3d388bb6"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3]]></ATT>
+            <ATT name="Content"><![CDATA[#Wed Jul 30 09:56:11 CEST 2025
+condition=average_traffic_density_15min > high_traffic_threshold_15min
+action=scale_up\: 1 target\: cloud_server_1
+description=This trigger initiates a scaling action for cloud_server_1. It triggers a scale-up event (scaling by 1 unit) when the average traffic density over a 15-minute period exceeds a predefined high traffic threshold.
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="TriggerTable" mc="Infrastructure.PropertyTableDefinition" uid="79e95ecd-2038-452e-89c3-8fb65ecf1363"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

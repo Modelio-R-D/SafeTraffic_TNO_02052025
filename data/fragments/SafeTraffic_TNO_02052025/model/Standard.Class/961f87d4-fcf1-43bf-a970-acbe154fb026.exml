@@ -16,28 +16,28 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Trigger1" mc="Standard.Class" uid="237dbd68-b636-4376-a5bc-a962d57c7c09"/>
+        <COMPID name="high_cpu_utilization_on_fog_trigger" mc="Standard.Class" uid="237dbd68-b636-4376-a5bc-a962d57c7c09"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TPolicy" mc="Infrastructure.Stereotype" uid="afe2c9ed-9fab-4a53-a2d2-b52d849d0799"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="targets" mc="Infrastructure.Dependency" uid="68d1dc77-55fd-476f-8d80-f92fe6947759"/>
+          <ID name="targets" mc="Infrastructure.Dependency" uid="24b44689-5f29-4730-b9fb-fe69458a888a"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[targets]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="RedLightDetection" mc="Standard.Class" uid="a79cbc2f-4b07-4852-a702-68fdf9a7b406"/>
+              <ID name="Myrtus-Compute_0" mc="Standard.Class" uid="d0c0149d-ad99-4e22-858a-b831e3321651"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="62df87b1-db52-4b46-80e1-61ec61c983b9"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="beb83489-928d-4272-b331-2062bc96d0e9"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -45,7 +45,7 @@
                 <DEPENDENCIES>
                   <COMP relation="Actual">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TagParameter" uid="75df5324-850d-43f7-9eaa-9bb00a2b06ab"/>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="e80e7d73-0bf0-4aec-98ec-0ae0fb6387ec"/>
                       <ATTRIBUTES>
                         <ATT name="Value"><![CDATA[targets]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -59,6 +59,62 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="type" mc="Infrastructure.Dependency" uid="ae1a5b98-275d-4f5b-ab5e-ec13ca542b63"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <FOREIGNID name="Performance" mc="Standard.Class" uid="0c666064-29d1-4e91-8222-63095f528766"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="722e4d1d-4fc4-4c1a-85cb-6c6e6104ae8c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="26acf837-8bb9-4362-a159-a4f0e8a9e69f"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[type]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="role" mc="Infrastructure.TagType" uid="7637f2fd-b750-43c1-a15c-5d0b084ca1cd"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="afe2c9ed-9fab-4a53-a2d2-b52d849d0799" mc="Infrastructure.TypedPropertyTable" uid="c13a840b-45f6-48e0-8ea4-b53b2d0357b8"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[afe2c9ed-9fab-4a53-a2d2-b52d849d0799]]></ATT>
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:27:21 CEST 2025
+description=Edge devices SHOULD maintain computational resource (CPU, GPU) utilization below 60% to ensure adequate headroom for handling unexpected traffic spikes or system events.
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="TPolicyTable" mc="Infrastructure.PropertyTableDefinition" uid="ca3978f9-9ac6-4b7b-8785-a9d502a40e86"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

@@ -23,7 +23,7 @@
           <ID name="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3" mc="Infrastructure.TypedPropertyTable" uid="f657f5a1-6c4f-439f-8678-779768ac36f4"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3]]></ATT>
-            <ATT name="Content"><![CDATA[#Wed Jul 30 09:57:35 CEST 2025
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:37:20 CEST 2025
 condition=average_traffic_density_15min < low_traffic_threshold_15min
 action=scale_down\: 1 target\: cloud_server_1
 description=This trigger initiates a scaling action for cloud_server_1. It triggers a scale-down event (scaling by 1 unit) when the average traffic density over a 15-minute period falls below a predefined low traffic threshold.

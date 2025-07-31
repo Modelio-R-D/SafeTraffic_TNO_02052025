@@ -23,7 +23,7 @@
           <ID name="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3" mc="Infrastructure.TypedPropertyTable" uid="d16713f1-4b7f-42b4-ae87-00a5e046330a"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3]]></ATT>
-            <ATT name="Content"><![CDATA[#Wed Jul 30 09:54:04 CEST 2025
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:28:18 CEST 2025
 schedule=
 condition=datetime.datetime.now().time() >\= datetime.time(1, 0) and datetime.datetime.now().time() <\= datetime.time(5, 0) and average_traffic_density_15min < low_traffic_threshold_15min
 target_filter=

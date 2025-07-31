@@ -16,28 +16,28 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Trigger1" mc="Standard.Class" uid="05c7d655-2011-455d-9068-ee5422ff3c34"/>
+        <COMPID name="edge_low_power_mode_trigger" mc="Standard.Class" uid="05c7d655-2011-455d-9068-ee5422ff3c34"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TPolicy" mc="Infrastructure.Stereotype" uid="afe2c9ed-9fab-4a53-a2d2-b52d849d0799"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="targets" mc="Infrastructure.Dependency" uid="7605f285-5f8a-44c6-b71d-fc0e97d074fb"/>
+          <ID name="targets" mc="Infrastructure.Dependency" uid="e28bf86c-97bc-4fbd-adec-20857634d277"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[targets]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="EncryptionDecryption" mc="Standard.Class" uid="850094ee-4e8d-4a7c-bfd3-bfef006fb07a"/>
+              <ID name="Myrtus-Compute_0" mc="Standard.Class" uid="d0c0149d-ad99-4e22-858a-b831e3321651"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="3f28e45a-3b51-4695-b199-6ae67854de44"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="f76caee0-042e-42cd-b080-eafeca62a1f4"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -45,7 +45,7 @@
                 <DEPENDENCIES>
                   <COMP relation="Actual">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TagParameter" uid="115ef9e2-bcc6-4b57-b0c7-06f6c3f7618c"/>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="8d273bc0-c8cf-42b5-bc07-5f0e798616b3"/>
                       <ATTRIBUTES>
                         <ATT name="Value"><![CDATA[targets]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -59,6 +59,62 @@
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="type" mc="Infrastructure.Dependency" uid="b04d942e-43df-4714-b8a0-5cd48fcf914e"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <FOREIGNID name="Performance" mc="Standard.Class" uid="0c666064-29d1-4e91-8222-63095f528766"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="c193e22a-52a6-4b6c-a578-34630c61edff"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="cadb1d08-d9fa-46b5-86c7-960ea36934de"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[type]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="role" mc="Infrastructure.TagType" uid="7637f2fd-b750-43c1-a15c-5d0b084ca1cd"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="afe2c9ed-9fab-4a53-a2d2-b52d849d0799" mc="Infrastructure.TypedPropertyTable" uid="c2a66a74-1735-4ff9-bd2a-d5d66e2e2946"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[afe2c9ed-9fab-4a53-a2d2-b52d849d0799]]></ATT>
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:39:23 CEST 2025
+description=This policy manages an edge device's operational mode by adjusting its camera frame rate. It activates a low power mode (setting frame_rate to 10 FPS) when the time is between 1\:00 AM and 5\:00 AM, and the average 15-minute traffic density is below a specified low threshold. Otherwise, the frame rate is maintained at 30 FPS.
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="TPolicyTable" mc="Infrastructure.PropertyTableDefinition" uid="ca3978f9-9ac6-4b7b-8785-a9d502a40e86"/>
+            </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

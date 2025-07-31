@@ -23,7 +23,7 @@
           <ID name="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3" mc="Infrastructure.TypedPropertyTable" uid="fce4a62b-ea97-4251-b1e9-ba2f3d388bb6"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3]]></ATT>
-            <ATT name="Content"><![CDATA[#Wed Jul 30 09:56:11 CEST 2025
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:30:48 CEST 2025
 condition=average_traffic_density_15min > high_traffic_threshold_15min
 action=scale_up\: 1 target\: cloud_server_1
 description=This trigger initiates a scaling action for cloud_server_1. It triggers a scale-up event (scaling by 1 unit) when the average traffic density over a 15-minute period exceeds a predefined high traffic threshold.

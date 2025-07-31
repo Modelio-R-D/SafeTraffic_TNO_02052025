@@ -16,7 +16,7 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Trigger1" mc="Standard.Class" uid="28e6d68c-2bf9-4c0b-bb2d-ac12f8694725"/>
+        <COMPID name="high_cpu_utilization_on_camera_trigger" mc="Standard.Class" uid="28e6d68c-2bf9-4c0b-bb2d-ac12f8694725"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TPolicy" mc="Infrastructure.Stereotype" uid="afe2c9ed-9fab-4a53-a2d2-b52d849d0799"/>
@@ -61,13 +61,52 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="targets" mc="Infrastructure.Dependency" uid="4e4a49fe-cbd6-4b7f-ae13-da6b0e2a2297"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[targets]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Myrtus-Compute_0" mc="Standard.Class" uid="d0c0149d-ad99-4e22-858a-b831e3321651"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="03378d07-2d39-456d-8362-ce82c03f6032"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="ed10bb88-3a70-41bc-923a-5f31a531fb15"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[targets]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="role" mc="Infrastructure.TagType" uid="7637f2fd-b750-43c1-a15c-5d0b084ca1cd"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Properties">
         <OBJECT>
           <ID name="afe2c9ed-9fab-4a53-a2d2-b52d849d0799" mc="Infrastructure.TypedPropertyTable" uid="8a78ba2d-3daf-474a-8158-eb7b17a4377d"/>
           <ATTRIBUTES>
             <ATT name="Name"><![CDATA[afe2c9ed-9fab-4a53-a2d2-b52d849d0799]]></ATT>
-            <ATT name="Content"><![CDATA[#Thu Jul 24 22:25:37 CEST 2025
+            <ATT name="Content"><![CDATA[#Thu Jul 31 12:26:27 CEST 2025
 description=Edge devices SHOULD maintain computational resource (CPU, GPU) utilization below 70% to ensure adequate headroom for handling unexpected traffic spikes or system events.
 ]]></ATT>
             <ATT name="status">1970354901745664</ATT>

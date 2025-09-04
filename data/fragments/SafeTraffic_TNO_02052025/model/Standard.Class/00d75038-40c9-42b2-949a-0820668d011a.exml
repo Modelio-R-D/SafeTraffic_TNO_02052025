@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="MyrtusSecurityCounterMeasure" version="4">
   <OBJECT>
     <ID name="MyrtusSecurityCounterMeasure" mc="Standard.Class" uid="00d75038-40c9-42b2-949a-0820668d011a"/>
-    <PID name="example.eu.myrtus" mc="Standard.Package" uid="514e962c-6dae-48bf-8710-7f5942700c5b"/>
+    <PID name="nodetypes" mc="Standard.Package" uid="7ab2c20a-43bb-4656-b5bd-c5b8d30856a7"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>

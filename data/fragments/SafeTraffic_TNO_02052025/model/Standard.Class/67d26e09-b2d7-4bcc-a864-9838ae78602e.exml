@@ -21,6 +21,8 @@
         <COMPID name="edge_low_power_mode" mc="Standard.Class" uid="8369b05e-5bbb-43db-83e4-4cee974184a8"/>
         <COMPID name="high_traffic_scaling" mc="Standard.Class" uid="d55b2355-b46f-4f5e-a44f-3dd2b45947c0"/>
         <COMPID name="low_traffic_scaling" mc="Standard.Class" uid="c0900cd4-42c8-41c0-be08-a8b00dd360de"/>
+        <COMPID name="camera_latency" mc="Standard.Class" uid="6e7f3bfe-a826-4857-bba2-114d28a0fbf7"/>
+        <COMPID name="warning_delivery_delay" mc="Standard.Class" uid="e3c0a0cf-72a6-4fb2-9050-bca9f194887c"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="PoliciesType" mc="Infrastructure.Stereotype" uid="205759e2-44bb-4cb3-b19e-8cfbed4f9435"/>

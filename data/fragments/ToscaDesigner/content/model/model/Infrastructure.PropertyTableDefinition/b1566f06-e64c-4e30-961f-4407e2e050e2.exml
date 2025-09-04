@@ -23,7 +23,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="c463d0a7-8449-4b24-adf7-8d6daa8fafda"/>
+                <ID name="" mc="Infrastructure.Note" uid="580b60ef-8e85-462f-9bcb-7dba34b48507"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.ImportElementPropertyTable.File.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -53,7 +53,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="89edcc28-c189-4b0a-9d7e-e935946c8c38"/>
+                <ID name="" mc="Infrastructure.Note" uid="112d8005-f8a2-44de-8907-258524d1642f"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.ImportElementPropertyTable.Namespace_uri.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
@@ -83,7 +83,7 @@
             </LINK>
             <COMP relation="Descriptor">
               <OBJECT>
-                <ID name="" mc="Infrastructure.Note" uid="cc02df29-01ec-4a43-a688-79753fe09cd7"/>
+                <ID name="" mc="Infrastructure.Note" uid="846037b1-9543-44e2-a60b-2c367e91047a"/>
                 <ATTRIBUTES>
                   <ATT name="Content"><![CDATA[%propertydefinition.ImportElementPropertyTable.Namespace_prefix.description]]></ATT>
                   <ATT name="MimeType"><![CDATA[text/plain]]></ATT>

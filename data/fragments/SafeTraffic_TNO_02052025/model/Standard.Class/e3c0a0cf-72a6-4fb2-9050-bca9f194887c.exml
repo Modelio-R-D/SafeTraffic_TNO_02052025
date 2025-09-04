@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Myrtus-Compute" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="warning_delivery_delay" version="4">
   <OBJECT>
-    <ID name="Myrtus-Compute" mc="Standard.Class" uid="08c52dae-2e22-40f3-a166-8bb3b2e40ebb"/>
-    <PID name="nodetypes" mc="Standard.Package" uid="7ab2c20a-43bb-4656-b5bd-c5b8d30856a7"/>
+    <ID name="warning_delivery_delay" mc="Standard.Class" uid="e3c0a0cf-72a6-4fb2-9050-bca9f194887c"/>
+    <PID name="Policies" mc="Standard.Class" uid="67d26e09-b2d7-4bcc-a864-9838ae78602e"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
       <ATT name="IsMain">false</ATT>
@@ -11,30 +11,33 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Myrtus-Compute]]></ATT>
+      <ATT name="Name"><![CDATA[warning_delivery_delay]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="warning_delivery_delay_trigger" mc="Standard.Class" uid="20c51154-1969-454a-b2dc-e0c1df54eb78"/>
+      </COMP>
       <LINK relation="Extension">
-        <FOREIGNID name="TNodeType" mc="Infrastructure.Stereotype" uid="47cdd09e-013d-4670-b757-f5736d2bb48c"/>
+        <FOREIGNID name="TPolicy" mc="Infrastructure.Stereotype" uid="afe2c9ed-9fab-4a53-a2d2-b52d849d0799"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="derivedFrom" mc="Infrastructure.Dependency" uid="60362f44-6004-40bd-9a8d-54e2522460f3"/>
+          <ID name="type" mc="Infrastructure.Dependency" uid="8c1afd46-638e-401f-88be-d710734c51ff"/>
           <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[derivedFrom]]></ATT>
+            <ATT name="Name"><![CDATA[type]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <FOREIGNID name="Compute" mc="Standard.Class" uid="13f04cdb-48c8-46e4-9929-1def4720dfe9"/>
+              <FOREIGNID name="Performance" mc="Standard.Class" uid="0c666064-29d1-4e91-8222-63095f528766"/>
             </LINK>
             <LINK relation="Extension">
               <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
             </LINK>
             <COMP relation="Tag">
               <OBJECT>
-                <ID name="" mc="Infrastructure.TaggedValue" uid="d8af6b69-48a7-4822-b80e-f02ff2c14ce8"/>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="01a75acd-deaf-4b41-bbd0-1039a930e4fd"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -42,9 +45,9 @@
                 <DEPENDENCIES>
                   <COMP relation="Actual">
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.TagParameter" uid="3a4d8e39-6e98-456d-ac7d-5b7b626e8430"/>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="6fa81631-b758-4acb-bde3-142e1db15446"/>
                       <ATTRIBUTES>
-                        <ATT name="Value"><![CDATA[derivedFrom]]></ATT>
+                        <ATT name="Value"><![CDATA[type]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -61,20 +64,17 @@
       </COMP>
       <COMP relation="Properties">
         <OBJECT>
-          <ID name="fecd81a5-da41-4a07-a507-6bfaf5bbadd2" mc="Infrastructure.TypedPropertyTable" uid="a4db7c6e-061f-4816-ba91-2278beb859a6"/>
+          <ID name="afe2c9ed-9fab-4a53-a2d2-b52d849d0799" mc="Infrastructure.TypedPropertyTable" uid="3edd515b-9f47-4ee1-ac98-0c8146d44b79"/>
           <ATTRIBUTES>
-            <ATT name="Name"><![CDATA[fecd81a5-da41-4a07-a507-6bfaf5bbadd2]]></ATT>
-            <ATT name="Content"><![CDATA[#Wed May 07 11:59:33 CEST 2025
-abstract=false
-description=Representation of a computing node in the Myrtus systems.
-final=false
-targetNamespace=example.eu.myrtus.nodetypes
+            <ATT name="Name"><![CDATA[afe2c9ed-9fab-4a53-a2d2-b52d849d0799]]></ATT>
+            <ATT name="Content"><![CDATA[#Mon Aug 25 14:18:48 CEST 2025
+description=Delay for warning users (drivers, vrus, etc) should be within 500ms of detected dangerous event
 ]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Type">
-              <FOREIGNID name="TEntityTypePropertyTable" mc="Infrastructure.PropertyTableDefinition" uid="e8f30f06-d953-4192-a783-d2a57c96564c"/>
+              <FOREIGNID name="TPolicyTable" mc="Infrastructure.PropertyTableDefinition" uid="ca3978f9-9ac6-4b7b-8785-a9d502a40e86"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

@@ -80,10 +80,8 @@
         <COMPID name="CollisionPredictor" mc="Standard.Class" uid="0912b6b1-33f5-4cc9-8967-fc7664dbc38e"/>
         <COMPID name="MyrtusCameraFeed" mc="Standard.Class" uid="2274b4f1-6d3c-4500-b601-e6fb9bf19268"/>
         <COMPID name="IllegalTrajectoryDetection" mc="Standard.Class" uid="709dee06-5f13-4432-a4d9-889dd92a295f"/>
-        <COMPID name="DigitalSignatureVerification" mc="Standard.Class" uid="be97ea6a-f222-4945-bfb6-6737acaeddb9"/>
         <COMPID name="EncryptionDecryption" mc="Standard.Class" uid="850094ee-4e8d-4a7c-bfd3-bfef006fb07a"/>
         <COMPID name="KeyExchangeMechanism" mc="Standard.Class" uid="9555b10a-d6b4-4eb2-b3e1-0d01e06c2579"/>
-        <COMPID name="SideChannelSecureLibrary" mc="Standard.Class" uid="e348da1d-7d19-4e07-a45f-e15902ac8a5d"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TTopologyTemplate" mc="Infrastructure.Stereotype" uid="a52f433c-cf19-4033-99c2-81b4af708744"/>

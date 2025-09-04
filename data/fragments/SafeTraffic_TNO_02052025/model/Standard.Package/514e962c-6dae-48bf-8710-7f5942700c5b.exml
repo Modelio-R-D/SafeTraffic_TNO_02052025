@@ -16,7 +16,6 @@
       <COMP relation="OwnedElement">
         <COMPID name="nodetypes" mc="Standard.Package" uid="7ab2c20a-43bb-4656-b5bd-c5b8d30856a7"/>
         <COMPID name="TrafficApplication" mc="Standard.Class" uid="ce65c77d-9685-4585-bec9-2ea51220f666"/>
-        <COMPID name="MyrtusSecurityCounterMeasure" mc="Standard.Class" uid="00d75038-40c9-42b2-949a-0820668d011a"/>
         <COMPID name="Policies" mc="Standard.Class" uid="67d26e09-b2d7-4bcc-a864-9838ae78602e"/>
       </COMP>
       <LINK relation="Extension">
@@ -25,6 +24,8 @@
       <COMP relation="Product">
         <COMPID name="Service Template diagram" mc="Standard.StaticDiagram" uid="4423cb1f-1ddf-497a-b666-9fea8f2f09fd"/>
         <COMPID name="Topology Template diagram" mc="Standard.StaticDiagram" uid="2bf27790-9fcb-4e36-9cbc-daa871868554"/>
+        <COMPID name="Node types diagram" mc="Standard.StaticDiagram" uid="fe4982b7-9800-482c-95da-b2f2f190ba1c"/>
+        <COMPID name="Policies diagram" mc="Standard.StaticDiagram" uid="52d2f718-264e-4680-8e2d-37ae4b70a0e9"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

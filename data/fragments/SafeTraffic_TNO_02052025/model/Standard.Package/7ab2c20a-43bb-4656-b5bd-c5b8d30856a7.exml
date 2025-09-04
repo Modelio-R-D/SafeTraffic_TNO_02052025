@@ -17,6 +17,7 @@
         <COMPID name="Myrtus-Compute" mc="Standard.Class" uid="08c52dae-2e22-40f3-a166-8bb3b2e40ebb"/>
         <COMPID name="MyrtusCameraFeed" mc="Standard.Class" uid="3b1bedca-43aa-4468-a427-a3790920c54d"/>
         <COMPID name="MyrtusSWComponent" mc="Standard.Class" uid="e0aedf8c-c2e2-42ec-8d2c-954e9258fd66"/>
+        <COMPID name="MyrtusSecurityCounterMeasure" mc="Standard.Class" uid="00d75038-40c9-42b2-949a-0820668d011a"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TServiceTemplate" mc="Infrastructure.Stereotype" uid="09682faf-27b8-4c4b-a5e6-22fe18303161"/>

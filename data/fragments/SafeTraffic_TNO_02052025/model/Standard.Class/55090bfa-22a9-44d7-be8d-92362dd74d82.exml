@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="camera_latency_trigger" version="4">
+  <OBJECT>
+    <ID name="camera_latency_trigger" mc="Standard.Class" uid="55090bfa-22a9-44d7-be8d-92362dd74d82"/>
+    <PID name="camera_latency" mc="Standard.Class" uid="6e7f3bfe-a826-4857-bba2-114d28a0fbf7"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[camera_latency_trigger]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="Trigger" mc="Infrastructure.Stereotype" uid="d385b57a-f3ae-45f5-90b4-bfc96c3ea0c3"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

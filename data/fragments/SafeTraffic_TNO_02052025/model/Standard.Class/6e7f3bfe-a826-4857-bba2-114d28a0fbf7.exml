@@ -1,0 +1,123 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="camera_latency" version="4">
+  <OBJECT>
+    <ID name="camera_latency" mc="Standard.Class" uid="6e7f3bfe-a826-4857-bba2-114d28a0fbf7"/>
+    <PID name="Policies" mc="Standard.Class" uid="67d26e09-b2d7-4bcc-a864-9838ae78602e"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[camera_latency]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="camera_latency_trigger" mc="Standard.Class" uid="55090bfa-22a9-44d7-be8d-92362dd74d82"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="TPolicy" mc="Infrastructure.Stereotype" uid="afe2c9ed-9fab-4a53-a2d2-b52d849d0799"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="targets" mc="Infrastructure.Dependency" uid="58570b66-aca6-44a0-b550-31e52d85b7dd"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[targets]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Myrtus-Compute_0" mc="Standard.Class" uid="d0c0149d-ad99-4e22-858a-b831e3321651"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="e65cd262-a0f1-4f9d-84b4-01b6ee71163e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="10b3a3b7-29b5-46e8-bcd5-195c6aa69568"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[targets]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="role" mc="Infrastructure.TagType" uid="7637f2fd-b750-43c1-a15c-5d0b084ca1cd"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="type" mc="Infrastructure.Dependency" uid="f7c7b38e-caf9-455a-a6cb-ec33776a249d"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[type]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <FOREIGNID name="Performance" mc="Standard.Class" uid="0c666064-29d1-4e91-8222-63095f528766"/>
+            </LINK>
+            <LINK relation="Extension">
+              <FOREIGNID name="MDAAssocDep" mc="Infrastructure.Stereotype" uid="94b7efa5-f94c-4d1d-896f-f103e56a8e2e"/>
+            </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="f86d6e45-613a-4164-b6ad-7a6c929cf128"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="b983a06b-e02d-4026-8300-497796ff1094"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"><![CDATA[type]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="role" mc="Infrastructure.TagType" uid="7637f2fd-b750-43c1-a15c-5d0b084ca1cd"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Properties">
+        <OBJECT>
+          <ID name="afe2c9ed-9fab-4a53-a2d2-b52d849d0799" mc="Infrastructure.TypedPropertyTable" uid="1ce91688-28ff-493c-b9b3-4a58ffcc9b16"/>
+          <ATTRIBUTES>
+            <ATT name="Name"><![CDATA[afe2c9ed-9fab-4a53-a2d2-b52d849d0799]]></ATT>
+            <ATT name="Content"><![CDATA[#Tue Aug 26 19:10:16 CEST 2025
+description=Cameras should send frame rates under 200ms to other nodes in the topology
+]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Type">
+              <FOREIGNID name="TPolicyTable" mc="Infrastructure.PropertyTableDefinition" uid="ca3978f9-9ac6-4b7b-8785-a9d502a40e86"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
